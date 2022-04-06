@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+/*-------------------------------------------------------------
+  중간고사 CSS 
+--------------------------------------------------------------*/
+
+/* Common */
+h1,h2,h3,h4,h5,h6{font-family:'NotoSansKR', sans-serif}
+
+/* header */
+.header{position:relative;height:90px;z-index:20;display:flex;justify-content:space-around;background-color:#fff;/*width:calc(100% - 60px);padding:0 30px;*/line-height:90px;margin:0 auto}
+.header ul{display:flex;width:800px}
+.header ul li{flex-basis:calc(100% / 5);text-align:center}
+.header ul li a{color:#282a35;text-decoration:none;padding:25px 30px;display:inline-block;width:100px;font-size:18px;font-weight:500;font-family:'Roboto', sans-serif;line-height:40px;position:relative}
+.header ul li a::before{content:"";display:block;position:absolute;bottom:0;left:10px;width:0;height:3px;background-color:#282a35}
+.header ul li a:hover::before{width:calc(100% - 20px);transition:width .3s}
+
+
+/* Mega Menu */
+.menu-box{display: flex;padding: 50px;;background: #95dee0;height: 330px;justify-content: center;transition: all.4s;transform: translate(0,-100%);z-index:10;}
+.menu-box dl{display: flex;flex-basis: 15%;align-items: center;flex-direction: column;   font-family:'Roboto';}
+.menu-box dt{font-size: 17px;margin-bottom: 20px;font-weight: bold;}
+.menu-box a{font-size:13px;line-height: 30px;display:block;max-width: 150px;overflow: hidden; text-overflow: ellipsis;white-space: nowrap;}
+.menu-box a:hover{ text-decoration : underline;}
+.menu-box-list-opened .menu-box.menu-list { box-shadow:0 0 20px rgba(0, 0, 0, .5);transform:translate(0, 0)}
+
+.sidebar-menu{display: none;}
+
+
+
+
+
+/* Main */
+.main-txt{position:absolute;right:20%;top:50%;transform:translateY(-50%);color:#fff;text-align:center}
+.main-txt .tit{font-size:40px}
+.main .sec-cont h3{padding-bottom:0}
+.desc{width:960px;margin:30px auto;text-align:center;font-size:14px;color:#707070}
+
+
+
+/* Main-visual - Title font 사이즈는 40px로 한다 */
+.main-visual li{position:relative;}
+
+
+
+
+
+/* Row1 - 섹션의 width는 1260px을 기준으로 한다 */
+.row1{padding:70px 0;overflow: hidden;}
+.row1>div{width: 100%;background-color:#ccc;margin: 0 auto;}
+.row1>div>div{width: 50%;float: left;text-align: center;padding:40px;}
+.row1 h1{display: block;float: none;font-size: 88px;font-weight:900;color: #282A35;}
+.row1 p{font-size: 18px;font-family:'Roboto';font-weight:500;line-height: 2.5;}
+.row1 .btn{display: block;padding:10px 16px;width:200px;margin: 25px auto 0;font-size: 16px;font-weight: 600;color: #fff;border-radius: 50px;}
+.row1 .btn::before{content: '';display:inline-block;width:24px;height:24px;background:url("../Img/arrow-right-solid_wt.svg") no-repeat center / 70%;vertical-align: bottom;margin-right:10px;}
+.row1 .btn1{background-color:#059862;}
+.row1 .btn1:hover{background-color:#056844;}
+.row1 .btn2{background-color:#fff4a3;color:#222;}
+.row1 .btn2::before{background-image:url("../Img/arrow-right-solid.svg");opacity:.6;}
+.row1 .btn2:hover{background-color:#f5e674;color:#222;}
+.row1 .btn3{background-color:#4e5167;}
+.row1 .btn3:hover{background-color:#323862;}
+.right-cont img{border-radius:10px;width:100%;}
+
+
+/* Row2 - 섹션의 width는 1400px을 기준으로 한다 */ /*1400px / ㄱㅏ운데 / width:calc(33.3% - 20px)% / margin: 0 20px / padding 40px 30px */
+
+.row2{height:520px;padding:120px 0;background-color:#282A35;overflow: hidden;text-align: center;}
+/* .row2{padding:40px 30px 0;overflow: hidden;} */
+.row2>div{width: 1400px;margin: 0 auto;height:100%;}
+.row2 .card{width:calc(33.3% - 40px);float: left;text-align: center;padding:40px 30px;border-radius:40px;height:100%;margin:0 20px;}
+.card .icon{width:110px;height:100px;float:left;border-radius:60px;background:white no-repeat center/cover;}
+.card .icon img{width:50px;height:50px;margin:30px;}
+.row2 .card1{background-color:#ffc0c7;}
+.row2 .card2{background-color:#fff4a3;}
+.row2 .card3{background-color:#96d4d4;}
+.cont-text{text-align: center;width:58%;float: right;margin-right:20px;}
+.cont-text h1{font-size:40px;font-weight: 900;width:200px;margin-bottom:10px;}
+.cont-text p{font-size:16px;font-weight:bold;}
+.btnn{display: inline-block;width:170px;height:40px;padding:13px 10px 0 10px; margin:30px;font-size:16px;font-weight:bold;color: black;border-radius:10px;border: solid 1px rgb(85, 81, 81);}
+.btnn::after{content: '';display:inline-block;width:24px;height:24px;background:url("../Img/arrow-right-solid.svg") no-repeat center/80%;vertical-align:middle;margin-left:15px;}
+
+
+
+
+
+
+
+/* Row3 - 빈 곳에 icon을 넣는다 & html에서 이미지도 교체한다 */
+.row3{overflow:hidden}
+.card-txt-wrap div{float:left;width:40px;height:40px;background:#FF5558 url() no-repeat center/cover;border-radius:2px}
+.card-txt-wrap .ico1{background-image:url("../Img/grin-regular.svg");background-size:70%}
+.card-txt-wrap .ico2{background-image:url("../Img/grin-hearts-regular.svg");background-size:70%}
+.card-txt-wrap .ico3{background-image:url("../Img/grin-beam-sweat-regular.svg");background-size:70%}
+.card-txt-wrap .ico4{background-image:url("../Img/grin-beam-regular.svg");background-size:70%}
+.card-txt-wrap .ico5{background-image:url("../Img/grin-alt-regular.svg");background-size:70%}
+
+
+
+
+/* Footer - footer의 width는 1200px을 기준으로 한다 */
+footer{height:270px;background:#eee;padding:50px 0;text-align:left}
+footer>div{width:1200px;margin:0 auto}
+.footer-cont p{line-height:4em;font-size:16px;border-top: 1px solid rgba(0,0,0,.2);}
+.footer-cont p:nth-child(1){border-top:none;}
+.footer-cont span{padding:0 20px;display:inline-block;}
+.footer-cont span:first-child{width:20%;font-weight:700;}
+.footer-cont span:first-child::before{content: '';display: inline-block;width:24px;height:24px;background:url()no-repeat center 70%;vertical-align: middle;margin-top:-2px;margin-right:10px;opacity:.7;}
+.contact span:first-child::before{background-image:url("../Img/envelope-solid.svg");}
+.phone span:first-child::before{background-image:url("../Img/phone-alt-solid.svg")}
+.copyright{padding:0 20px;}
+
+
+/* Media Query - 원하는 부분 한 부분만 적용해도 인정. 단, font 요소들은 제외 */
+@media only screen and (max-width:1280px) { 
+
+}
+
+@media only screen and (min-width:769px) and (max-width:1280px){
+.jd-slider.main-slider .slide-area, .jd-slider.main-slider .slide-area > li > a{height:350px;}
+.row1>div>div{width:100%;}
+.row3 .jd-slider .btn{width: 100%;}
+.row3 .slider{width: 100%;}
+footer{height:100%}
+footer>div{width:100%;margin:0 auto;}
+.footer-cont span:first-child{width:100%;}
+.desc{width:100%;}
+.cont-card3{width:100%;}
+.row2{height: 100%;}
+.row2>div{width: 100%;}
+.row2 .card{width: 80%;float: none;margin: 30px auto;}
+
+
+}
+
+@media only screen and (min-width:640px) and (max-width:768px){ 
+.jd-slider.main-slider .slide-area, .jd-slider.main-slider .slide-area > li > a{height:240px;}
+.row1>div>div{width:100%;}
+.row3 .jd-slider .btn{width: 100%;}
+.row3 .slider{width: 100%;}
+footer{height:100%}
+footer>div{width:100%;margin:0 auto;}
+.footer-cont span:first-child{width:100%;}
+.desc{width:100%;}
+.cont-card3{width:100%;}
+.row2{height: 100%;}
+.row2>div{width: 100%;}
+.row2 .card{width: 80%;float: none;margin: 30px auto;}
+
+
+}
+
+@media only screen and (min-width:320px) and (max-width:639px){ 
+.jd-slider.main-slider .slide-area, .jd-slider.main-slider .slide-area > li > a{height:190px;}
+.jd-slider.main-slider a{font-size:1em;}
+.jd-slider.main-slider .controller .indicate-area a{width:12px;height:12px;}
+.jd-slider.main-slider .controller .indicate-area a:after{border-width:3px;}
+.row1>div>div{width:100%;}
+.row3 .jd-slider .btn{width: 100%;}
+.row3 .slider{width: 100%;}
+footer{height:100%}
+footer>div{width:100%;margin:0 auto;}
+.footer-cont span:first-child{width:100%;}
+.desc{width:100%;}
+.cont-card3{width:100%;}
+.row2{height: 100%;}
+.row2>div{width: 100%;}
+.row2 .card{width: 80%;float: none;margin: 30px auto;}
+}
+
+/* header*/
+.header>ul, .menu-box{display:none;} 
+
+/* sidebar-menu */
+/* .sidebar-menu{display: flex; width:50px; height:100%; position:relative; top:0; right: 0; z-index: 20;}
+.sidebar-menu .res-menu{ position:absolute; top:50%; left:50%; width:20px; height:12px; transform:translate(-50%, -50%); cursor:pointer; }
+.sidebar-menu .res-menu span{ diplay:block; position:absolute; width:100%; height:2px; background:#333; border-radius:2px; transition: transform .3s; }
+.sidebar-menu span:nth-child(1){ top:0;left:0; }
+.sidebar-menu span:nth-child(2){ top:50%; left:50%; transform:translate(-50%, -50%); }
+.sidebar-menu span:nth-child(3){ bottom:0;left:0; }
+#sideopen {display:none;}
+.head input[type="checkbox"]:checked + label > .res-menu span:nth-child(1){ top:50%; transform:translateY(-50%) rotate(-45deg); }
+.head input[type="checkbox"]:checked + label > .res-menu span:nth-child(2){ display:none; }
+.head input[type="checkbox"]:checked + label > .res-menu span:nth-child(3){ top:50%; transform:translateY(-50%) rotate(45deg); }
+.sidebar{ position:fixed; width:100%; height:100vh; top:90px; right:0; background:#e1e1e1; border-right:1px solid #ccc; transition:left .5s; }
+.head input[type="checkbox"]:checked + label + .sidebar{ left:0; } */
+.sidebar-menu {display:block;width:60px;height:90px;position:absolute;right:0;top:0}
+.sidebar-menu .res-menu {position:absolute;top:37px;right:18px;width:24px;height:16px;cursor:pointer;z-index:20}
+.sidebar-menu .res-menu span {display:block;position:absolute;width:100%;height:2px;background:#333;border-radius:2px;transition:transform .3s}
+.sidebar-menu span:nth-child(1) {top:0;left:0}
+.sidebar-menu span:nth-child(2) {top:50%;left:50%;transform:translate(-50%, -50%)}
+.sidebar-menu span:nth-child(3) {bottom:0;left:0}
+#sideopen {display:none}
+.sidebar-menu input[type="checkbox"]:checked + label.sideopen > .res-menu{z-index:20}
+.sidebar-menu input[type="checkbox"]:checked + label > .res-menu span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(-45deg)}
+.sidebar-menu input[type="checkbox"]:checked + label > .res-menu span:nth-child(2) {display:none}
+.sidebar-menu input[type="checkbox"]:checked + label > .res-menu span:nth-child(3) {top:50%;transform:translateY(-50%) rotate(45deg)}
+.sidebar {position:fixed;width:100%;height:100vh;top:90px;right:-100%;background:#fff;border-left:1px solid #ccc;transition:right .5s;z-index:20}
+.sidebar-menu input[type="checkbox"]:checked + label + .sidebar {right:0} /* 아코디언 메뉴 */
+.cate {width:100%;position:relative;border-bottom:1px solid rgba(0,0,0,.15)}
+.cate:first-child {border-top:1px solid rgba(0,0,0,.15)}
+.cate .menu {display:block;position:relative;width:100%;background:#fff;height:50px}
+.cate .menu .menulink {display:block;color:#222;text-decoration:none;width:70%;padding-left:25px;line-height:50px;font-size:17px;font-weight:500;font-family:'Roboto', sans-serif}
+.cate .menu .subopen {position:absolute;width:20px;height:20px;right:20px;padding:0;top:0;bottom:0;margin:auto}
+.cate .menu .subopen span {position:absolute;display:block;width:6px;height:6px;top:calc(50% - 2px);left:50%;transform:translate(-50%, -50%) rotate(45deg);border-right:2px solid #999;border-bottom:2px solid #999;transition:.3s}
+.cate .menu .subopen.active span {top:50%;transform:translate(-50%, -50%) rotate(-135deg)}
+.cate ul{background-color:#d8e7f1}
+.cate ul li {padding:5px 15px 5px 35px;font-size:14px}
+.cate ul li::before{content:"";display:inline-block;width:3px;height:3px;background-color:#666;vertical-align:middle;margin-right:7px}
+.cate ul li:first-child {padding-top:20px}
+.cate ul li:last-child {padding-bottom:20px}
+.cate ul li a:hover{text-decoration:underline}
+
+/* 아코디언 메뉴 */
+.cate{ width:100%; position:relative; border-bottom:1px solid #000; }
+.cate:last-child{ border-bottom:1px solid #000; }
+.cate .menu{ display:block; position:relative; width:100%; background:gray; height:50px; }
+.cate .menu .menulink{ display:block; color:#fff; text-decoration:none; width:70%; padding-left:15px; line-height:50px; font-size:15px; }
+.cate .menu .subopen{ position:absolute; width:20px; height:20px; right:15px; padding:0; top:0; bottom:0; margin:auto; }
+.cate .menu .subopen span{ position:absolute; display:block; width:8px; height:8px; top:calc(50% - 4px); left:50%; transform:translate(-50%, -50%) rotate(45deg); border-right:1px solid #fff; border-bottom:1px solid #fff; transition:.3s; }
+.cate .menu .subopen.active span{ top:50%; transform:translate(-50%, -50%) rotate(-135deg); }
+.cate ul li{ padding:5px 15px; font-size:13px; }
+.cate ul li:first-child{ padding-top:20px; }
+.cate ul li:last-child{ padding-bottom:20px; }
+
+
+
+
+@media only screen and (max-width:319px){ 
+.jd-slider.main-slider .slide-area, .jd-slider.main-slider .slide-area > li > a{height:150px;}
+.jd-slider.main-slider a{font-size:1em;}
+.jd-slider.main-slider .controller .indicate-area a{width:12px;height:12px;}
+.jd-slider.main-slider .controller .indicate-area a:after{border-width:3px;}
+.row1>div>div{width:100%;}
+.row3 .jd-slider .btn{width: 100%;}
+.row3 .slider{width: 100%;}
+footer{height:100%}
+footer>div{width:100%;margin:0 auto;}
+.footer-cont span:first-child{width:100%;}
+.desc{width:100%;}
+.cont-card3{width:100%;}
+.row2{height: 100%;}
+.row2>div{width: 100%;}
+.row2 .card{width: 80%;float: none;margin: 30px auto;}
+
+  }
