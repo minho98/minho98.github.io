@@ -29,9 +29,10 @@
 .jd-slider .slide-area > li{width:25%;/*border-right:1px solid #888;border-left:0;*/box-sizing:border-box}
 .jd-slider .slide-area > li > a{display:block;height:350px;margin:15px;border-radius:5px;box-shadow:0 7px 7px rgba(0,0,0,.10)}
 .jd-slider .slide-area > li > a:hover{box-shadow:0 7px 10px rgba(0,0,0,.25)}
-.jd-slider .slide-area > li > a img{height:260px;border-radius:5px 5px 0 0 }
+.jd-slider .slide-area > li > a img{height:260px;border-radius:5px 5px 0 0 ;}
+
 .jd-slider .btn{position:absolute;top:50%;width:100%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
-.jd-slider .next:hover, .jd-slider .prev:hover{color:#999}
+.jd-slider .next:hover, .jd-slider .prev:hover{color:#999;}
 .card-txt-wrap{padding:20px;}
 .card-txt-wrap div, .card-txt-wrap dl{display:inline-block}
 .card-txt-wrap dl{margin-left:25px;width:calc(100% - 65px);font-size:22px;font-weight:700;}
@@ -46,10 +47,10 @@
 .jd-slider.main-slider .slide-area > li{width:100%;}
 .jd-slider.main-slider .slide-area > li > a{height:500px;margin:0;border-radius:0;box-shadow:none}
 .jd-slider.main-slider .slide-area > li > a:hover{box-shadow:none}
-.jd-slider.main-slider .slide-area > li > a img{height:auto;border-radius:0;transform:translateY(-20%); } /*transfrom 은 y,x 사용해서 사진 위치 조정가능*/
+.jd-slider.main-slider .slide-area > li > a img{width:1200px;height:600px;border-radius:0;display: block;margin: 0 auto;  } /*transfrom 은 y,x 사용해서 사진 위치 조정가능*/
 
-.jd-slider.main-slider  .next, .jd-slider.main-slider  .prev{color:rgba(255,255,255,0.3);padding:20px;}
-.jd-slider.main-slider  .next:hover, .jd-slider.main-slider  .prev:hover{color:rgba(255,255,255,0.9);}
+.jd-slider.main-slider  .next, .jd-slider.main-slider  .prev{color:rgba(255, 63, 63, 0.3);padding:20px;}
+.jd-slider.main-slider  .next:hover, .jd-slider.main-slider  .prev:hover{color:rgba(255, 22, 22, 0.9);}
 
 
 .jd-slider.main-slider .controller{position:absolute;bottom:20px;}
