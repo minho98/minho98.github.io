@@ -17,7 +17,7 @@ h1,h2,h3,h4,h5,h6{font-family:'NotoSansKR', sans-serif}
 
 
 /* Mega Menu */
-.menu-box{display: flex;padding: 50px;;background: #95dee0;height: 330px;justify-content: center;transition: all.4s;transform: translate(0,-100%);z-index:10;}
+.menu-box{display: flex;padding: 50px;;background: #95dee0;height: 330px;justify-content: center;transition: all.4s;transform:translate(0,-100%);z-index:10;}
 .menu-box dl{display: flex;flex-basis: 15%;align-items: center;flex-direction: column;   font-family:'Roboto';}
 .menu-box dt{font-size: 17px;margin-bottom: 20px;font-weight: bold;}
 .menu-box a{font-size:13px;line-height: 30px;display:block;max-width: 150px;overflow: hidden; text-overflow: ellipsis;white-space: nowrap;}
@@ -72,9 +72,9 @@ h1,h2,h3,h4,h5,h6{font-family:'NotoSansKR', sans-serif}
 .row2 .card{width:calc(33.3% - 40px);float: left;text-align: center;padding:40px 30px;border-radius:40px;height:100%;margin:0 20px;}
 .card .icon{width:110px;height:100px;float:left;border-radius:60px;background:white no-repeat center/cover;}
 .card .icon img{width:50px;height:50px;margin:30px;}
-.row2 .card1{background-color:#ffc0c7;}
-.row2 .card2{background-color:#fff4a3;}
-.row2 .card3{background-color:#96d4d4;}
+.row2 .card1{background-image: url(/Img/test1.png);}
+.row2 .card2{background-image:url(/Img/test2.png);}
+.row2 .card3{background-image:url(/Img/test3.png);}
 .cont-text{text-align: center;width:58%;float: right;margin-right:20px;}
 .cont-text h1{font-size:40px;font-weight: 900;width:200px;margin-bottom:10px;}
 .cont-text p{font-size:16px;font-weight:bold;}
@@ -106,7 +106,7 @@ footer>div{width:1200px;margin:0 auto}
 .footer-cont p:nth-child(1){border-top:none;}
 .footer-cont span{padding:0 20px;display:inline-block;}
 .footer-cont span:first-child{width:20%;font-weight:700;}
-.footer-cont span:first-child::before{content: '';display: inline-block;width:24px;height:24px;background:url()no-repeat center 70%;vertical-align: middle;margin-top:-2px;margin-right:10px;opacity:.7;}
+.footer-cont span:first-child::before{content: '';display: inline-block;width:24px;height:24px;background:url()no-repeat center 70%;vertical-align:middle;margin-top:-2px;margin-right:10px;opacity:.7;}
 .contact span:first-child::before{background-image:url("../Img/envelope-solid.svg");}
 .phone span:first-child::before{background-image:url("../Img/phone-alt-solid.svg")}
 .copyright{padding:0 20px;}
