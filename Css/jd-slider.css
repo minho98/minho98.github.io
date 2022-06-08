@@ -36,7 +36,7 @@
 .card-txt-wrap{padding:20px;}
 .card-txt-wrap div, .card-txt-wrap dl{display:inline-block}
 .card-txt-wrap dl{margin-left:25px;width:calc(100% - 65px);font-size:22px;font-weight:700;}
-.card-txt-wrap dt{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.card-txt-wrap dt{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align: center;;}
 .card-txt-wrap dd{font-size:11px;color:#999;margin-top:3px}
 
 

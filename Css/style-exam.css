@@ -90,7 +90,7 @@ h1,h2,h3,h4,h5,h6{font-family:'NotoSansKR', sans-serif}
 
 /* Row3 - 빈 곳에 icon을 넣는다 & html에서 이미지도 교체한다 */
 .row3{overflow:hidden}
-.card-txt-wrap div{float:left;width:40px;height:40px;background:#FF5558 url() no-repeat center/cover;border-radius:2px}
+.card-txt-wrap div{float:left;height:40px;background:#FF5558 url() no-repeat center/cover;border-radius:2px}
 .card-txt-wrap .ico1{background-image:url("../Img/grin-regular.svg");background-size:70%}
 .card-txt-wrap .ico2{background-image:url("../Img/grin-hearts-regular.svg");background-size:70%}
 .card-txt-wrap .ico3{background-image:url("../Img/grin-beam-sweat-regular.svg");background-size:70%}
