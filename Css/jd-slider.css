@@ -49,7 +49,7 @@
 .jd-slider.main-slider .slide-area > li > a:hover{box-shadow:none}
 .jd-slider.main-slider .slide-area > li > a img{width:1200px;height:600px;border-radius:0;display: block;margin: 0 auto;  } /*transfrom 은 y,x 사용해서 사진 위치 조정가능*/
 
-.jd-slider.main-slider  .next, .jd-slider.main-slider  .prev{color:rgba(255, 63, 63, 0.3);padding:20px;}
+.jd-slider.main-slider  .next, .jd-slider.main-slider  .prev{color:#fff;padding:20px;}
 .jd-slider.main-slider  .next:hover, .jd-slider.main-slider  .prev:hover{color:rgba(255, 22, 22, 0.9);}
 
 
