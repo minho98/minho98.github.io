@@ -50,7 +50,7 @@ h1,h2,h3,h4,h5,h6{font-family:'NotoSansKR', sans-serif}
 .row1>div{width: 100%;}
 .row1>div>div{margin-top: 200px;}
 .row1 h1{display: block;float: none;font-size: 88px;font-weight:900;color: #ffffff;}
-.row1 p{font-size: 18px;font-family:'Roboto';font-weight:500;line-height: 2.5;margin-bottom: 50px;color: #fff;}
+.row1 p{font-size: 22px;font-family:'Roboto';font-weight:500;line-height: 2.5;margin-bottom: 50px;color: #fff;}
 .row1 .btn{padding:10px 16px;width:200px;margin: 25px auto 0;font-size: 16px;font-weight: 600;color: #fff;border-radius: 50px;}
 .row1 .btn::before{content: '';display:inline-block;width:24px;height:24px;background:url("../Img/arrow-right-solid_wt.svg") no-repeat center / 70%;vertical-align: bottom;margin-right:10px;}
 .row1 .btn1{background-color:#059862;}
