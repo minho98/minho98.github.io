@@ -79,8 +79,8 @@ h1,h2,h3,h4,h5,h6{font-family:'NotoSansKR', sans-serif}
 .cont-text{text-align: center;width:58%;float: right;margin-right:20px;}
 .cont-text h1{font-size:40px;font-weight: 900;width:200px;margin-bottom:10px;}
 .cont-text p{font-size:16px;font-weight:bold;}
-.btnn{display: inline-block;width:170px;height:40px;padding:13px 10px 0 10px; margin:30px;font-size:16px;font-weight:bold;color: black;border-radius:10px;border: solid 1px rgb(85, 81, 81);text-align: end;}
-.btnn::after{content: '';display:inline-block;width:24px;height:24px;vertical-align:middle;margin-left:15px;}
+.btnn{display: inline-block;width:170px;height:40px;padding:13px 10px 0 10px; margin:30px;font-size:16px;font-weight:bold;color: black;border-radius:10px;border: solid 1px rgb(85, 81, 81);text-align: center;}
+/* .btnn::after{content: '';display:inline-block;width:24px;height:24px;vertical-align:middle;margin-left:15px;} */
 
 
 
